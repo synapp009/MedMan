@@ -1,14 +1,47 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      C2 ToolBox
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+ <ion-item-group>
+
+   <!-- <ion-item-divider color="light">F</ion-item-divider> -->
+   
+    <ion-item-sliding *ngFor="let item of itemList | async">
+      <button ion-item (click)="goToItemDetail(item.$key)">
+        {{item.name}}<button ion-button  item-end  *ngIf="arr.indexOf(item.$key) === -1" class="highlight">Neu!</button>
+      </button>
+
+      <ion-item-options>
+
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-item-group>
+
+  <button ion-button block color="primary" (click)="goToCreate()">
+    Create a new Event
+  </button>
+<accordion *ngFor="let parent of parents" [title]="parent">
+    <ion-item-group>
+        
+           <!-- <ion-item-divider color="light">F</ion-item-divider> -->
+           
+            <ion-item-sliding *ngFor="let items of parentItems">
+              <button ion-item *ngIf="(items.parent) === parent" (click)="goToItemDetail(items.$key)">
+                {{items.name}} <button ion-button  item-end  *ngIf="arr.indexOf(items.$key) === -1" class="highlight">Neu!</button>
+              </button>
+        
+              <ion-item-options>
+        
+              </ion-item-options>
+            </ion-item-sliding>
+          </ion-item-group>
+  
+  
+</accordion>
 </ion-content>
+

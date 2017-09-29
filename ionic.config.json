@@ -1,6 +1,6 @@
 {
   "name": "MedMan2",
-  "app_id": "dda40778",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {},
+  "app_id": "01541049"
 }

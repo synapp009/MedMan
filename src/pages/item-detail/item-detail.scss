@@ -1,0 +1,28 @@
+page-item-detail {
+
+  .item-profile {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    background-position: center center;
+    background-size: cover;
+    max-height: 100%;
+
+  }
+
+  img.item-profile {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .item-detail {
+    width: 100%;
+    background: white;
+    position: absolute;
+  }
+
+  em,i{
+    font-style:italic;
+}
+}

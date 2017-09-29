@@ -1,0 +1,53 @@
+  <!-- 
+    
+    <ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ currentItem?.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
+  </div>
+
+
+  <div class="item-detail" padding>
+    <h2>{{currentItem?.name}}</h2>
+    <h5>{{currentItem?.about}}</h5>
+    <br>
+    {{currentItem?.text}}
+  </div>
+
+
+<ion-list>
+         <h2>{{currentItem?.name}}</h2>
+      <p>Ticket: <strong>${{currentItem?.price}}</strong></p>
+      <p>Date: <strong>{{currentItem?.date}}</strong></p>
+
+  </ion-list>
+</ion-content>
+-->
+
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{(detailObject | async)?.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+      <img class="item-profile" text-center [src]="image" />
+      <button ion-button (click)="downloadImage('image')"> Download image </button>
+      <button ion-button (click)="retrieveImage('image')" color="secondary">Retrieve downloaded image</button>
+
+    <div class="item-detail" padding>
+      <h2>{{(detailObject | async)?.name}}</h2>
+      <i><h6>{{(detailObject | async)?.about}}</h6></i>
+      <br>
+      <div [innerHTML]="(detailObject | async)?.detail"></div>
+    </div>
+
+</ion-content>

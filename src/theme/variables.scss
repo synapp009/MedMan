@@ -21,7 +21,11 @@ $app-direction: ltr;
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
+$toolbar-background: #AD3432;
+$toolbar-border-color: #AD3432;
+$toolbar-text-color: #AD3432;
+$toolbar-active-color: #AD3432;
+$toolbar-inactive-color: #AD3432;
 
 
 
@@ -34,11 +38,12 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  primary:    #AD3432,
+  secondary:  silver,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  navbarColor: #009688
 );
 
 
@@ -78,7 +83,12 @@ $colors: (
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
-@import "ionic.ionicons";
+$ionicons-font-path: "../assets/fonts";
+
+
+// @import "ionic.ionicons";
+
+@import "ionicons";
 
 
 // Fonts
@@ -86,3 +96,4 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+

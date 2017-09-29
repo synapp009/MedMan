@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Neuer Eintrag</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked>Titel</ion-label>
+    <ion-input [(ngModel)]="itemName" type="text" 
+    placeholder="Titel des Eintrags">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Untertitel</ion-label>
+    <ion-input [(ngModel)]="itemAbout" type="text" 
+    placeholder="Untertitel des Eintrags">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Details</ion-label>
+    <ion-input [(ngModel)]="itemDetail" type="text" 
+    placeholder="Der Text des Eintrags">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Kategorie</ion-label>
+    <ion-input [(ngModel)]="itemCat" type="text" 
+    placeholder="Der Text des Eintrags">
+    </ion-input>
+  </ion-item>
+
+  <button ion-button block 
+    (click)="createItem(itemName, itemAbout, itemDetail, itemCat)">
+    Erstelle Eintrag
+  </button>
+</ion-content>
