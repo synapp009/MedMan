@@ -1,5 +1,5 @@
-import { OnInit, Component, ViewChild, Renderer, Input } from '@angular/core';
-
+import {  NO_ERRORS_SCHEMA, NgModule, OnInit, Component, ViewChild, Renderer, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 /**
  * Generated class for the AccordionComponent component.
  *
@@ -16,6 +16,10 @@ export class AccordionComponent implements OnInit {
 accordionExpanded = false;
 @ViewChild("cc") cardContent: any;
 @Input('title') title: string;
+@NgModule({
+
+})
+
 
 icon: string = "arrow-forward";
   constructor(public renderer: Renderer) {

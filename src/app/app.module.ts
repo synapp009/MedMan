@@ -4,6 +4,9 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
  import { IonicStorageModule } from '@ionic/storage';
 
+ import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+
+ 
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
@@ -19,14 +22,15 @@ import {File} from '@ionic-native/file';
 
 import { AccordionComponent } from '../components/accordion/accordion';
 
+
 import { AuthProvider } from '../providers/auth/auth';
 import { ItemProvider } from '../providers/event/event';
-import { HomePage } from '../pages/home/home';
 
-import { TabsPage } from '../pages/tabs/tabs';
+
+
 import { AboutPage } from '../pages/about/about';
 import { SearchPage } from '../pages/search/search';
-import { LoginPage } from '../pages/login/login';
+
 
 
 import { ContactPage } from '../pages/contact/contact';
@@ -52,6 +56,7 @@ export const firebaseConfig = {
     projectId: "medman-ed6f6",
     storageBucket: "medman-ed6f6.appspot.com",
     messagingSenderId: "873364850814"
+    
 };
 
 
@@ -59,12 +64,11 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
     AboutPage,
     ContactPage,
-    TabsPage,
-    AccordionComponent,
-    SearchPage
+    SearchPage,
+    AccordionComponent
+
   
     
   ],
@@ -88,8 +92,6 @@ export const firebaseConfig = {
     MyApp,
     AboutPage,
     ContactPage,
-    HomePage,
-    TabsPage,
 
     SearchPage
   ],

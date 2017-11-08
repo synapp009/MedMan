@@ -1,6 +1,8 @@
 {
   "name": "MedMan2",
   "type": "ionic-angular",
-  "integrations": {},
-  "app_id": "01541049"
+  "integrations": {
+    "cordova": {}
+  },
+  "app_id": "acec1b4a"
 }

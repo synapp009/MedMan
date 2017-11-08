@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "873364850814",
+    "firebase_url": "https://medman-ed6f6.firebaseio.com",
+    "project_id": "medman-ed6f6",
+    "storage_bucket": "medman-ed6f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_id": "android:com.medman.project",
+      "client_info": {
+        "mobilesdk_app_id": "1:873364850814:android:b87eda56344e020e",
+        "android_client_info": {
+          "package_name": "com.medman.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873364850814-isskanf75fplq3sqqu01i1h2i48o4217.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUPf6opIeg3npI7nkHkHKFSkQrqVaKp5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

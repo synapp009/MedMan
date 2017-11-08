@@ -1,5 +1,14 @@
 {
+  "types": [
+    "firebase"
+  ],
   "compilerOptions": {
+    "paths": {
+      "@angular/*": [
+        "../node_codules/@angular/*"
+      ]
+    },
+    "noStrictGenericChecks": true,
     "allowSyntheticDefaultImports": true,
     "declaration": false,
     "emitDecoratorMetadata": true,
